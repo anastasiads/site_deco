@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Décorable</title>
+	<title>Décorable | Beaux objets </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
 </head>
 <body>
 
 
-<section class="accueil">
+<section id="ancre" class="accueil">
 
-<div class="textaccueil">
-	<a href="http://www.google.fr">Home</a>
-	<a href="http://www.google.fr">Idées</a>
-	<a href="http://www.google.fr">Objets</a>
-	<a href="http://www.google.fr">Shop</a>
-</div>
+	<div class="textaccueil"> <!-- nav -->
+		<a href="http://www.google.fr">Home</a>
+		<a href="http://www.google.fr">Idées</a>
+		<a href="http://www.google.fr">Objets</a>
+		<a href="http://www.google.fr">Shop</a>
+	</div>
 
 </section>
+
+
+
+
 
 <section id="page2">
-	<div class="citation">	
-		<img src="assets/icon.png"> <p><strong>Love makes a house a Home.</strong></p>
-	</div>
-		<div class="email">
-		<p>Inscrivez-vous pour plus d'informations. Vous recevrez plein d'informations, et ça, c'est vraiment génial ! </p>
-		<p><span><em>Adresse e-mail</em></span></p>
-		<a href="http://www.google.fr">M'inscrire !</a>
-		
-	</div>
+	<div class="container-fluid">
+	  	<div class="row">
+		    <div class="col-md-7" >
+		    	<div class="citation">
+		    		 <img src="assets/icon.png"> <p><strong>Love makes a house a Home.</strong></p>
+		     	</div>
+		    </div> <!-- end col-md-6 -->
+
+		    <div class="col-md-5">
+		       <div class="email">
+		    		 <p>Inscrivez-vous pour plus d'informations. Vous recevrez plein d'informations, et ça, c'est vraiment génial ! </p>
+					<form class="form-inline" role="form">
+			  			<div class="form-group">
+						    <label for="mail">Restons en contact !</label>
+						    <input type="email" class="form-control" id="mail" placeholder="Adresse e-mail">
+						    <input type="submit" value="Envoyer" class="btn btn-primary">
+					  	</div>
+					</form>
+				</div>
+			</div> <!-- end col-md-6 -->
+
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+
 </section>
 
+
+
+
+
 <section class="mur_image">
-	
+	BAAAAAAA
 
 </section>
 
@@ -43,7 +71,7 @@
 	<div class="citation">
 		<img src="assets/icon.png"> <p><strong>An interior is the natural projection of the soul.</strong></p>
 
-		<p><h2>Nos marques ont été spécialement sélectionnées pour la qualité de leurs produits et l'originalité des produits.</h2></p>
+		<p><h2>Nos marques ont été spécialement sélectionnées pour la qualité et l'originalité des produits.</h2></p>
 	</div>
 	<div class="citationbrand">
 		<img src="assets/brand1.jpg" alt="eno studio">
@@ -57,22 +85,71 @@
 </section>
 
 <section  id="objet">
-	
+	<div class="container-fluid">
+		  	<div class="row">
+			    <div class="col-md-6" >
+			    	<div class="photoobjet">
+			    		 <img src="assets/ananas.png">
+			     	</div>
+			    </div> <!-- end col-md-6 -->
 
+			    <div class="col-md-6">
+			       <div class="texteobjet">
+			    		<h3>L'objet du mois</h3>
+
+						<p>LAMPE ANANAS ROSE - GOODNIGHT LIGHT</p>
+						<ul>
+							<li><em>Designer</em> : Lorena Canals et Eva Newton</li>
+							<li><em>Matière</em> : Vinyle moulé</li>
+							<li><em>Caractéristiques</em>: Durée d'utilisation estimée à 50 000 heures environ, équivalent à une durée de vie de 16 ans pour une veilleuse allumée toutes les nuits</li>
+							<li><em>Couleur</em> : Rose</li>
+							<li><em>Dimension</em> : Hauteur : 36 cm</li>
+						</ul>
+					    
+						<p>Prix : 79,90€</p>
+
+		<a class="bouton" href="http://www.google.fr"> Voir </a>
+		<a class="bouton" href="http://www.google.fr"> Acheter </a>
+					</div>
+				</div> <!-- end col-md-6 -->
+
+			</div> <!-- end row -->
+	</div> <!-- end container -->
 </section>
-
 
 <section id="rs">
-	fdkjhf
-
+	<div class="container-fluid">
+	  	<div class="row">
+	  		<div class="rsback">
+			    <div class="col-md-1 col-md-offset-4">
+			    	<div class="rs1">
+			    		<a href="http://www.facebook.fr"><img src="assets/facebookicon.png"/></a>
+			    	</div>
+			    </div>
+			    <div class="col-md-1">
+			   		<a href="http://www.facebook.fr"><img src="assets/twittericon.png"/></a>
+			    </div>
+			    <div class="col-md-1">
+			    	<a href="http://www.facebook.fr"><img src="assets/pinteresticon.png"/></a>
+			    </div>
+			    <div class="col-md-1">
+			    	<a href="http://www.facebook.fr"><img src="assets/instaicon.png"/></a>
+			    </div>
+		  	 </div>
+		</div> <!-- end row -->
+	</div> <!-- end container -->
 
 </section>
 
-<footer>
-	
-
+<footer id="footer">
+	<a href="#ancre"><button type="button" class="btn btn-default btn-lg">
+  		<span class="glyphicon glyphicon-chevron-up"></span> 
+	</button></a>
+	 
 
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
