@@ -1,0 +1,161 @@
+body {
+
+	font-family: 'Roboto', sans-serif;
+ 	color: #B3B2B1;
+	background-color:white;
+
+	}
+
+h1 {
+  color: #A7968F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding: 2px;
+  padding-bottom: 0px;
+ 
+}
+
+h2 {
+	text-align: center;
+}
+
+
+.accueil {
+	height: 660px; /* a modifier pour que responsive */
+	width: auto;
+	background: url(assets/9_1.png) no-repeat center center;
+	background-size: cover;
+	font-family: 'Amatic SC', cursive;
+	font-size: 6em;
+	margin: 1px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.accueil .textaccueil {
+	margin: 0px;
+}
+
+	
+.accueil a {
+	color: #622A3A;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	padding: 0.5em;
+	line-height: 8em; 
+	margin-top: 8em;
+}
+
+
+#page2 {
+	background-color: #F7F6F4;
+	height: 660px; /* a modifier pour que responsive */
+	width: auto;
+}
+
+#page2 .citation {
+	float: left;
+	width: 60%;
+
+}
+
+#page2 .email {
+	float: right;
+	width: 40%;
+	font-size: 25px;
+	margin-top: auto;
+	text-align: left;
+	padding-right: 10px;
+
+}
+
+#page2 .citation img {
+	height: 80px;
+	width: 80px;
+}
+
+#page2 .citation p {
+	color: #A7968F;
+ 	font-family: 'Roboto', sans-serif;
+  	font-size: 40px;
+  	padding: 2px;
+  	padding-bottom: 0px;
+  	margin-left: 40px;
+}
+
+
+
+#page2 .email span {
+	background-color: #B3B2B1;
+	padding-right: 200px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #F7F6F4;
+	font-size: 20px;
+
+}
+
+#page2 .email a {
+	border-radius: 5px;
+	border: 2px solid white;
+	background-color: grey;
+	height: 40px;
+	width: 120px;
+	margin: auto;
+	text-align: center;
+	text-decoration: white;
+	color: white;
+	padding: 10px;
+	float: left;
+
+}
+
+#page4 {
+	background-color: #F7F6F4;
+	height: 500px; /* a modifier pour que responsive */
+	width: auto;
+}
+
+
+#page4 .citation img {
+	height: 80px;
+	width: 80px;
+	float: right;
+	padding: 20px;
+}
+
+#page4 .citation p {
+	color: #A7968F;
+ 	font-family: 'Roboto', sans-serif;
+  	font-size: 40px;
+  	padding: 2px;
+  	padding-bottom: 0px;
+  	margin-left: 40px;
+  	text-align: right;
+}
+
+.citationbrand {
+	margin-left: 30px;
+	position: center;
+	text-align: center;
+	margin-bottom: 30px;
+	clear: both;
+}
+
+.citationbrand img {
+	background-color: #F7F6F4;
+	height: auto;
+	width: 180px;
+	position: center;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#rs {
+	background-color: #Ffffff;
+	height: 400px; /* a modifier pour que responsive */
+	width: auto;
+}
