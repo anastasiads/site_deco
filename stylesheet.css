@@ -145,13 +145,10 @@ h3 {
   	margin-left: 40px;
 }
 
-
-
 .bouton {
 	border-radius: 5px;
 	border: 2px solid white;
 	background-color: grey;
-	height: 40px;
 	width: 120px;
 	margin: auto;
 	text-align: center;
@@ -159,6 +156,14 @@ h3 {
 	color: white;
 	padding: 10px;
 	float: left;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	font-family: 'Amatic SC', cursive;
+	font-size: 25px;
+	color: white;
+
 }
 
 #mur_image {
@@ -369,7 +374,7 @@ ul {
 	background-color: #F7F6F4;
 	height: 350px;
 
-	
+
 }
 
 #footer .row {
