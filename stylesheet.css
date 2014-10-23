@@ -1,11 +1,11 @@
 body {
 
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif, Arial;
  	color: #B3B2B1;
 	background-color:white;
 	background-size: 660px, auto;
 	margin: 0px;
-	padding: 0px;
+	padding-top: 50px;
 	}
 
 h1 {
@@ -19,47 +19,90 @@ h1 {
  
 h2 {
 	text-align: center;
+	color: #777777;
 }
 
 h3 {
 	color: #A7968F;  
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', cursive, Arial;
 	font-size: 70px;
-
 }
 
-.accueil {
+
+.navbar-brand img {
+	height: 30px;
+	width: auto;
+	padding-bottom: 9px;
+}
+
+.navbar-default {
+	background-color: #f8f8f8;
+	border-color: white;
+	}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #A7968F;
+	background-color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 45px;
+	}
+
+#accueil {
 	height: 660px; /* a modifier pour que responsive */
 	width: auto;
 	background: url(assets/9_1.png) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	vertical-align: middle;
+	border-radius: 1px;
+	padding-top: 110px;
 }
 
-.accueil .textaccueil {
+#accueil .fond_transparent {
+	margin-top: 70px; 
+	border: 2px;
+	height: 370px;
+	padding-top: 7px;
+	width: auto;
+	background: rgb(255,255,255);
+	background: rgba(255,255,255, 0.5);
+}
+
+#accueil .textaccueil {
 	margin: 0px;
-	color: #622A3A;
 	text-decoration: none;
 	text-align: center;
 	vertical-align: center;
-	padding: 0.5em;
-	line-height: 8em; 
-	font-family: 'Amatic SC', cursive;
-	font-size: 6em;
-	margin: 1px;
-	text-align: center;
-	vertical-align: center;
+		
 }
 
-.accueil .textaccueil h1 {
+#accueil .fond_transparent h1 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 200px;
 	margin: 1px;
 	text-align: center;
 	vertical-align: center;
+	color: #362049;
 }
-.accueil .textaccueil h2 {
+
+#accueil .fond_transparent h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 100px;
+	margin: 1px;
+	text-align: center;
+	vertical-align: center;
+	color: #622A3A;
+}
+
+#accueil .textaccueil h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 200px;
+	margin: 1px;
+	text-align: center;
+	vertical-align: center;
+	color: ;
+}
+#accueil .textaccueil h2 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 100px;
 	margin: 1px;
@@ -120,6 +163,8 @@ h3 {
 
 #mur_image {
 	height: 660px;
+
+	padding: 0px;
 }
 
 #mur_image .container {
@@ -305,28 +350,46 @@ ul {
 	width: auto;
 	margin: 0px;
 }
-#rs .rs1 {
-	opacity: 100%
-}
 
 #rs .rsback {
 	margin: 150px;
 	border-radius: 1px;
 	padding: 6px;
-	border: 2px solid white;
-	background-color: white;
-	opacity: 0.7;
+	border: 2px;
+/*	background-color: white;
+*//*	opacity: 0.7;*/
 	height: 80px;
 	width: auto;
-
-
+	background: rgb(255,255,255);
+	background: rgba(255,255,255, 0.7);
 }
 
 
-
-
 #footer {
-
 	background-color: #F7F6F4;
 	height: 350px;
+
+	
+}
+
+#footer .row {
+	padding-top: 40px;
+	text-align: center;
+}
+
+#footer a {
+	font-size: 20px;
+
+}
+
+#footer.privacy {
+	margin: 150px;
+	border-radius: 1px;
+	padding: 6px;
+	border: 2px;
+/*	background-color: white;
+*//*	opacity: 0.7;*/
+	height: 80px;
+	width: auto;
+	background-color: black;
 }
