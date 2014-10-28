@@ -14,7 +14,7 @@
 
 <body id="ancre">
 	<section id="accueil">
-		<div class="fond_transparent" class="textaccueil"> 
+		<div class="fond_transparent" class="textaccueil" class="hidden-xs hidden-sm"> 
 			<h1>Décorable</h1>
 			<h2>Beaux objets originaux</h2>
 		</div>
@@ -33,7 +33,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      	<a href="#ancre"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-chevron-up"></span></button>
+		      	<a href="#ancre" class="scroll-top"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-chevron-up"></span></button>
 		      	</a>
 		      <a class="navbar-brand" href="#"><img alt="Brand" src="assets/logo.png"></a>
 		    </div>
@@ -48,10 +48,10 @@
 		        </li>
 		      	</ul>
 		        <ul class="nav navbar-nav navbar-right">
-		        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
-		        <li><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
-		        <li><a href="http://www.pinterest.com/anas210/"><i class="fa fa-pinterest"></i></a></li>
-		        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+		        <li><a target="blanc" href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
+		        <li><a target="blanc" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+		        <li><a target="blanc" href="http://www.pinterest.com/anas210/"><i class="fa fa-pinterest"></i></a></li>
+		        <li><a target="blanc" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
 		        <form class="navbar-form navbar-left" role="search">
 		        <div class="form-group">
 		          <input type="text" class="form-control" placeholder="Rechercher">
@@ -69,20 +69,49 @@
 		  	<div class="row">
 			    <div class="col-md-7" >
 			    	<div class="citation">
-			    		 <img src="assets/icon.png"> <p><strong>Love makes a house a Home.</strong></p>
+			    		<img src="assets/icon.png"> 
+			    		<blockquote>
+						<p>Love makes a house a home.</p>
+						<footer><p>Quelqu'un de célèbre</p></footer>
+						</blockquote>
 			     	</div>
 			    </div> <!-- end col-md-6 -->
 
 			    <div class="col-md-5">
 			       <div class="email">
+
+
 			    		 <p>Inscrivez-vous pour plus d'informations. Vous recevrez plein d'informations, et ça, c'est vraiment génial ! </p>
 						<form class="form-inline" role="form">
 				  			<div class="form-group">
-							    <label for="mail">Restons en contact !</label>
-							    <input type="email" class="form-control" id="mail" placeholder="Adresse e-mail">
-							    <input type="submit" value="Envoyer" class="btn btn-primary">
-						  	</div>
+							    <label for="mail"><p>Restons en contact !</p></label>
+							    <p><input type="email" class="form-control" id="mail" placeholder="Adresse e-mail">
+							</div>
 						</form>
+							<!-- Button trigger modal -->
+							<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+							  C'est parti !
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							        <h4 class="modal-title 1" id="myModalLabel">Merci !</h4>
+							      </div>
+							      <div class="modal-body">
+							        Dès que le site sera prêt, vous recevrez un joli mail, avec plein d'amour dedans.
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-default 1" data-dismiss="modal">Okay !</button>
+							        
+							      </div>
+							    </div>
+							  </div>
+							</div>
+
 					</div>
 				</div> <!-- end col-md-6 -->
 
@@ -94,7 +123,7 @@
 
 
 
-	<section id="mur_image">
+	<section id="mur_image" class="hidden-xs hidden-sm">
 		<div class="container">
 		  	<div class="row">
 		  		<div class="col-md-2">
@@ -185,9 +214,11 @@
 
 	<section id="page4">
 		<div class="citation">
-			<img src="assets/icon.png"> <p><strong>An interior is the natural projection of the soul.</strong></p>
-
-			<h2>Nos marques ont été spécialement sélectionnées pour la qualité et l'originalité des produits.</h2>
+			<img src="assets/icon.png">
+			<blockquote>
+			<p>An interior is the natural projection of the soul.</p><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
+			<h2>Nos marques ont été spécialement sélectionnées pour la qualité et l'originalité de leurs produits.</h2>
 		</div>
 		<div class="citationbrand">
 			<img src="assets/brand1.jpg" alt="eno studio">
@@ -204,7 +235,7 @@
 			  	<div class="row">
 				    <div class="col-md-6" >
 				    	<div class="photoobjet">
-				    		 <img src="assets/ananas.png">
+				    		 <img class="img-responsive" src="assets/ananas.png">
 				     	</div>
 				    </div> <!-- end col-md-6 -->
 
@@ -212,7 +243,7 @@
 				       <div class="texteobjet">
 				    		<h3>L'objet du mois</h3>
 
-							<p>LAMPE ANANAS ROSE - GOODNIGHT LIGHT</p>
+							<h4>LAMPE ANANAS ROSE - GOODNIGHT LIGHT</h4>
 							<ul>
 								<li><em>Designer</em> : Lorena Canals et Eva Newton</li>
 								<li><em>Matière</em> : Vinyle moulé</li>
@@ -237,16 +268,16 @@
 		  	<div class="row">
 		  		<div class="rsback">
 				    <div class="col-md-1 col-md-offset-4">
-				    	<a href="http://www.facebook.fr"><img src="assets/facebookicon.png"/></a>
+				    	<a target="blanc" href="http://www.facebook.fr"><img src="assets/facebookicon.png" class="img-responsive" /></a>
 				    </div>
 				    <div class="col-md-1">
-				   		<a href="http://www.facebook.fr"><img src="assets/twittericon.png"/></a>
+				   		<a target="blanc" href="http://www.facebook.fr"><img src="assets/twittericon.png" class="img-responsive"/></a>
 				    </div>
 				    <div class="col-md-1">
-				    	<a href="http://www.facebook.fr"><img src="assets/pinteresticon.png"/></a>
+				    	<a target="blanc" href="http://www.facebook.fr"><img src="assets/pinteresticon.png" class="img-responsive"/></a>
 				    </div>
 				    <div class="col-md-1">
-				    	<a href="http://www.facebook.fr"><img src="assets/instaicon.png"/></a>
+				    	<a target="blanc" href="http://www.facebook.fr"><img src="assets/instaicon.png" class="img-responsive"/></a>
 				    </div>
 			  	 </div>
 			</div> <!-- end row -->
@@ -254,7 +285,7 @@
 
 	</section>
 
-	<footer id="footer">
+	<footer id="footer"> 
 		
 		<div class="container-fluid">
 		  	<div class="row">
@@ -294,19 +325,19 @@
 			<div class="row">
 				<div class="col-md-6">
 					<!-- Button trigger modal -->
-					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
 					  Terms and Conditions
 					</button>
 
 					<!-- Modal -->
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
+					<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel 1" aria-hidden="true">
+					  <div class="modal-dialog ">
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-					        <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+					        <h4 class="modal-title" id="myModalLabel 1">Terms and Conditions</h4>
 					      </div>
-					      <div class="modal-body">
+					      <div class="modal-body-2">
 					        <p>Terms & Conditions
 							of use for the LexisNexis Services</p>
 
@@ -337,12 +368,12 @@
 				<div class="col-md-6">
 					    		
 				<!-- Button trigger modal -->
-					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
 					  Privacy
 					</button>
 
 					<!-- Modal -->
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					  <div class="modal-dialog">
 					    <div class="modal-content">
 					      <div class="modal-header">
@@ -355,9 +386,9 @@
 
 							Privacy (from Latin: privatus) is the ability of an individual or group to seclude themselves, or information about themselves, and thereby express themselves selectively. The boundaries and content of what is considered private differ among cultures and individuals, but share common themes. When something is private to a person, it usually means there is something to them inherently special or sensitive. The domain of privacy partially overlaps security, including for instance the concepts of appropriate use, as well as protection of information. Privacy may also take the form of bodily integrity.
 
-							The right not to be subjected to unsanctioned invasion of privacy by the government, corporations or individuals is part of many countries' privacy laws, and in some cases, constitutions. Almost all countries have laws which in some way limit privacy. An example of this would be law concerning taxation, which normally require the sharing of information about personal income or earnings. In some countries individual privacy may conflict with freedom of speech laws and some laws may require public disclosure of information which would be considered private in other countries and cultures.
+							<p>The right not to be subjected to unsanctioned invasion of privacy by the government, corporations or individuals is part of many countries' privacy laws, and in some cases, constitutions. Almost all countries have laws which in some way limit privacy. An example of this would be law concerning taxation, which normally require the sharing of information about personal income or earnings. In some countries individual privacy may conflict with freedom of speech laws and some laws may require public disclosure of information which would be considered private in other countries and cultures.</p>
 
-							Privacy may be voluntarily sacrificed, normally in exchange for perceived benefits and very often with specific dangers and losses, although this is a very strategic view of human relationships. In the business world, a person may volunteer personal details (often for advertising purposes) in order to gamble on winning a prize. Personal information which is voluntarily shared but subsequently stolen or misused can lead to identity theft.
+							<p>Privacy may be voluntarily sacrificed, normally in exchange for perceived benefits and very often with specific dangers and losses, although this is a very strategic view of human relationships. In the business world, a person may volunteer personal details (often for advertising purposes) in order to gamble on winning a prize. Personal information which is voluntarily shared but subsequently stolen or misused can lead to identity theft.</p>
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
